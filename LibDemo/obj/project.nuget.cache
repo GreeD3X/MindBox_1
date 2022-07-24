@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qlxndx8bYTqdN03QFaGLJBrdJorNGVLOgXfY20w43RMLExlv+Rh4e/+Y9s/R6e2nYxS0KRpr0MMcgM+aqG+EAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\griga\\Documents\\MindBox_1\\LibDemo\\LibDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\griga\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}

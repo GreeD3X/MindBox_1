@@ -1,0 +1,9 @@
+C:\Users\griga\Documents\MindBox_1\MindBox_1\bin\Debug\netcoreapp3.1\MindBox_1.deps.json
+C:\Users\griga\Documents\MindBox_1\MindBox_1\bin\Debug\netcoreapp3.1\MindBox_1.dll
+C:\Users\griga\Documents\MindBox_1\MindBox_1\bin\Debug\netcoreapp3.1\MindBox_1.pdb
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.AssemblyInfoInputs.cache
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.AssemblyInfo.cs
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.csproj.CoreCompileInputs.cache
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.dll
+C:\Users\griga\Documents\MindBox_1\MindBox_1\obj\Debug\netcoreapp3.1\MindBox_1.pdb
