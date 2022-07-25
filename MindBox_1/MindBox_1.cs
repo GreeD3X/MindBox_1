@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace MindBox_1
 {
-    public static class AreaCalculator
+    public class AreaCalculator
     {
+        public AreaCalculator()
+        {
+            DynamicModules = new ExpandoObject();
+        }
         public static double GetAreaCircle(double radius)
         {
             return radius >= 0 ? radius * radius * Math.PI : -1;
@@ -54,7 +59,7 @@ namespace MindBox_1
                 totalArea += points[i].Item1 * (points[i + 1].Item2 - points[i - 1].Item2);
             }
 
-            return totalArea;
+            return totalArea/2;
         }
         public static double GetAreaArbitraryPoly(double[] pointx, double[] pointy)
         {
@@ -70,5 +75,7 @@ namespace MindBox_1
 
             return GetAreaArbitraryPoly(points);
         }
+
+        public dynamic DynamicModules;
     }
 }
