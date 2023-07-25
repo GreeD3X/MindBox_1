@@ -1,4 +1,34 @@
-select distinct t1.'Имя продукта' as 'Имя продукта', t2.'Имя категории' as 'Имя категории'
-from Продукты t1 
-	left join Продукты as t2 
-	on t1.'Имя продукта' = t2.'Имя продукта'
+В базе данных MS SQL Server есть продукты и категории. 
+Одному продукту может соответствовать много категорий,
+в одной категории может быть много продуктов. Напишите
+SQL запрос для выбора всех пар «Имя продукта – Имя категории».
+Если у продукта нет категорий, то его имя все равно
+должно выводиться.
+
+
+
+так как структура таблиц не уточнена, то предположим несколько вариантов и запросов к ним:
+
+1)Допустим, что у нас все лежит в одной таблице, тогда здесь мы просто сделаем простой select
+
+product -- имя продукта
+category-- имя категории
+
+select distinct product, category
+from Продукты 
+where product is not null --- на всякий случай
+
+2)Пусть теперь есть две таблицы: таблицы всех продуктов products и всех категорий categories и у каждого продукта есть 
+идентификатор категории, которой он соответствует, с дубликатами если ему соответствует много категорий:
+
+select products.product as product, categories.category as category
+from products left join categories ON products.category_id = categories.category_id;
+
+3)И сделаем еще шаг дальше заведем отдельно таблицу связей: 
+По сути подзапрос сделает из таблицы связей и категорий таблицу с которой мы проводили join во втором примере
+
+SELECT products.product AS product, categories.category AS category
+FRON products LEFT JOIN 
+		(SELECT link.product_id, categories.category
+		 FROM link ON categories.category_id = link.category_id) 
+	AS categories ON products.product_id = categories.product_id;
